@@ -22,6 +22,7 @@ jobs:
       - name: Add a Bindata Assetfs
         run: go get github.com/elazarl/go-bindata-assetfs
       - name : Database test
+        run : |
           echo "Run Cockroachdb"
           ls -lh
           mkdir build

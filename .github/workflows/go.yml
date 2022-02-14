@@ -21,3 +21,11 @@ jobs:
         run: go get github.com/jteeuwen/go-bindata
       - name: Add a Bindata Assetfs
         run: go get github.com/elazarl/go-bindata-assetfs
+      - name : Database test
+          echo "Run Cockroachdb"
+          ls -lh
+          mkdir build
+          sudo curl -L https://binaries.cockroachdb.com/cockroach-v21.2.5.linux-amd64.tgz | tar  xvz
+          ls -lh
+          sudo mv -f cockroach-v21.2.5.linux-amd64/cockroach ./build
+          ls -lh ./build  

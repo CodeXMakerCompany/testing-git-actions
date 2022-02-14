@@ -28,5 +28,5 @@ jobs:
           sudo curl -L https://binaries.cockroachdb.com/cockroach-v21.2.5.linux-amd64.tgz | tar  xvz
           sudo mv -f cockroach-v21.2.5.linux-amd64/cockroach ./build
           echo "Run checks"
-          cd .build
+          cd ./build
           ls -lh
